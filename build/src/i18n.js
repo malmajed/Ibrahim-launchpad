@@ -25,6 +25,9 @@ const AR={
  'Spaced review':'المراجعة المتباعدة','cards due. Five minutes keeps the concepts fresh.':'بطاقة مستحقة. خمس دقائق تُبقي المفاهيم حاضرة.','Review now':'راجع الآن',
  // tracks
  'Investment Foundations I':'أسس الاستثمار I','Concept reinforcement aligned to CFA Level I topics':'ترسيخ المفاهيم وفق موضوعات المستوى الأول من CFA',
+ 'Investment Foundations II':'أسس الاستثمار II','Valuation and analysis in item sets, aligned to CFA Level II topics':'التقييم والتحليل عبر مجموعات الأسئلة، وفق موضوعات المستوى الثاني من CFA',
+ 'Investment Foundations III':'أسس الاستثمار III','Portfolio and wealth management, aligned to CFA Level III core and pathways':'إدارة المحافظ والثروات، وفق جوهر المستوى الثالث من CFA ومساراته',
+ 'Investment Foundations II complete':'إتمام أسس الاستثمار II','Investment Foundations III complete':'إتمام أسس الاستثمار III',
  'MBA Core':'أساسيات ماجستير إدارة الأعمال','Accounting, finance, marketing, strategy, economics, data':'المحاسبة والتمويل والتسويق والاستراتيجية والاقتصاد والبيانات',
  'Trading and Technical Analysis':'التداول والتحليل الفني','Market mechanics, indicators, risk and honest backtesting':'آليات السوق والمؤشرات والمخاطر والاختبار التاريخي المنضبط',
  'The CFA missions reinforce concepts from CFA Institute\'s topic outline. They do not replace the official curriculum: the tracker measures your real work in the CFA Institute Learning Ecosystem and your prep provider.':'مهام CFA هنا ترسّخ مفاهيم مخطط موضوعات معهد CFA، ولا تغني عن المنهج الرسمي؛ فالمتتبّع يقيس عملك الفعلي في منصة التعلّم لدى معهد CFA ولدى مزوّد التحضير.',

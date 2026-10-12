@@ -1,5 +1,5 @@
 /* ================= CFA study tracker: coverage of the official 2027 outline, per-module progress, hours, mocks, readiness ================= */
-const SLV=['cfa1'],SLN={cfa1:'Level I'},HOURS=300;
+const SLV=['cfa1','cfa2','cfa3'],SLN={cfa1:'Level I',cfa2:'Level II',cfa3:'Level III'},HOURS=300;
 function cst(){if(!state.cfa)state.cfa={};const c=state.cfa;c.lv=c.lv||'cfa1';c.pw=c.pw||state.cfaPath||'pm';c.m=c.m||{};c.hrs=c.hrs||[];c.mk=c.mk||[];c.date=c.date||{};return c}
 const wmid=w=>(w[0]+w[1])/2;
 function modList(lv,pw){const O=CFAO[lv],out=[];O.topics.forEach(t=>t.m.forEach((m,i)=>out.push({id:`${lv}:${t.k}:${i}`,tk:t.k,tn:t.n,w:t.w,t:m[0],n:m[1]})));

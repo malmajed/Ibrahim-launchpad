@@ -1,11 +1,12 @@
 # Ibrahim's Launchpad — session handoff
 
-Last updated: 2026-10-12 · Status: **Batch 1 DONE (build v1).** Single-user fork of Majed's Launchpad: CFA Level I + MBA Core live, Trading track stubbed (titles only), blue/yellow palette, English/Arabic interface.
+Last updated: 2026-10-12 · Status: **Batch 1 DONE (build v2).** Single-user fork of Majed's Launchpad: Investment Foundations I, II, III (74 CFA+MBA missions total with MBA) + MBA Core live, Trading track stubbed (titles only), blue/yellow palette, English/Arabic interface.
 
 ## Owner decisions (Phase 0, approved 2026-10-12)
 - Ibrahim (owner's nephew), finance graduate, sits **CFA Level I in the May 2027 window → 2027 curriculum** (`cfa_outline.js` already 2027; 102 modules). Re-confirm on cfainstitute.org in batch 2 (third-party source said Nov 2026 is the last 2026-curriculum window).
 - **US-first** market focus (default tickers, news order, market-hours examples).
 - **Interface English + Arabic** (switch in header and Settings, RTL). Missions, cases, CFA questions stay **English only** (exam language). Wrap content in `EN()`.
+- **Levels II and III restored** (owner request 2026-10-12): a01–a20, b01–b16, x01–x22, simulators cfa1/cfa2/cfa3, tracker levels L1–L3 (full CFAO). Level I stays the main goal and the home focus.
 - **No Follow page** for the owner. No family profiles, PIN, rooms, weekly email.
 - Owner instructions: English only, one step at a time, objective first, clean copy-paste.
 - Approved plans: Trading missions t01–t12 (titles in `TRACKS` in app.js); news sources (below); CFA question bank Q1–Q7 (below); palette (below).
@@ -28,7 +29,7 @@ Navy #0B2545, royal #1F4FD8, sky #5DA9E9, sunflower #F5C518, amber #FFB000, pale
 - `build/src/core.js` — single user (`USER='ibrahim'`, `LSKEY='ilp-state'`), sync, notebook photos. Duel/rooms removed.
 - `build/src/i18n.js` — `LANG`, `t()`, `AR` dictionary, `setLang`, `applyLang`, `localize` (data-i18n). Add every new shell string to `AR`.
 - `build/src/app.js` — router, views, goals (`GDEF`: cfaHours, questions, reviews, missions), badges, SRS, case of the week, settings. `qAdd()/qSince()` count practice questions per day; `classifyLab` and `CUST` moved here.
-- `icons.js` (TC colours, MICON incl. t01–t12, `flag`/`award` icons), `labs_cfa1.js`, `data_cfa1.js`, `labs_mba.js`, `data_mba.js`, `cases_mba.js` (w05–w08), `exam.js` (cfa1 only), `study.js` (cfa1 only), `cfa_outline.js` (cfa1 only).
+- `icons.js` (TC colours, MICON incl. t01–t12, `flag`/`award` icons), `labs_cfa1.js`, `data_cfa1.js`, `labs_mba.js`, `data_mba.js`, `cases_mba.js` (w05–w08), `labs_cfa2.js`, `data_cfa2a/b.js`, `labs_cfa3.js`, `data_cfa3a/b.js`, `exam.js` (cfa1–3), `study.js` (L1–L3), `cfa_outline.js` (full 2027). `crPractice()` in app.js for Level III constructed responses.
 - `build/make.py vN` → `index.html` + sw cache `ilp-vN`. Fails on duplicate top-level names, duplicate LABS keys, syntax errors (node --check).
 - `build/Code.gs` — v5 single user; **SECRET in Script properties**, not in code.
 - Tests: `build/test/mock.js` (port 8767, key `test`), `build/test/test.js` (all missions/labs/quizzes, routes, phone-width overflow, Arabic RTL, WCAG contrast light+dark, sync). Run with `NODE_PATH=/opt/npm-tools/node_modules PLAYWRIGHT_BROWSERS_PATH=/opt/pw-browsers`, server on 8765.
@@ -41,7 +42,7 @@ Navy #0B2545, royal #1F4FD8, sky #5DA9E9, sunflower #F5C518, amber #FFB000, pale
 
 ## Owner setup status
 - Repo renamed to lowercase `ibrahim-launchpad` (was created as `Ibrahim-launchpad`). Pages on (Source: GitHub Actions). Live: https://malmajed.github.io/ibrahim-launchpad/ (Pages paths are case-sensitive).
-- Google Sheet "Ibrahim Launchpad Progress" created. Next: Apps Script (Code.gs v5), SECRET in Script properties, Deploy → New deployment, enter URL + secret in Settings.
+- Sheet "Ibrahim Launchpad Progress" + Apps Script v5 deployed (access: Anyone), SECRET in Script properties; backend tested (bad key rejected, read/write OK). Device link sent to Ibrahim via a professional WhatsApp message framing him as the first pilot user of an Istawra Services personalised-learning capability, with weekly feedback requested.
 
 ## Next action
-Finish owner setup (Apps Script backend), then batch 2.
+Batch 2: CFA tracker as home (Level I default), curriculum-year check, pace to May 2027, translated tracker labels. Consider offering a read-only owner view (he declined Follow page; weekly WhatsApp feedback is his only signal).

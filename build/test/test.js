@@ -16,7 +16,7 @@ const out={errors:[],console:[],missions:0,labs:0,quizQ:0,contrast:[],overflow:[
  const h1=await P.innerText('main h1');if(!/Ibrahim/.test(h1))out.errors.push('home greeting missing name: '+h1);
  for(const r of ['family','rooms'])if(await P.evaluate(r=>typeof window['v'+r[0].toUpperCase()+r.slice(1)]!=='undefined',r))out.errors.push('leftover view: '+r);
  // 2. every route
- const routes=['#/home','#/tracks','#/track/cfa1','#/track/mba','#/track/trade','#/review','#/case','#/more','#/goals','#/badges','#/journal','#/settings','#/study','#/exam','#/exam/cfa1'];
+ const routes=['#/home','#/tracks','#/track/cfa1','#/track/cfa2','#/track/cfa3','#/track/mba','#/exam/cfa2','#/exam/cfa3','#/study/cfa2','#/study/cfa3','#/track/trade','#/review','#/case','#/more','#/goals','#/badges','#/journal','#/settings','#/study','#/exam','#/exam/cfa1'];
  for(const r of routes){await go(r);const w=await P.evaluate(()=>document.documentElement.scrollWidth);if(w>392)out.overflow.push(r+' '+w+'px')}
  // 3. every mission: learn → lab → test (answer correctly by matching textContent) → reflect → read
  const ids=await P.evaluate(()=>Object.keys(M).sort());

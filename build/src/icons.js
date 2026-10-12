@@ -74,7 +74,7 @@ const IC={
 };
 const ico=(k,sz,sw)=>`<svg class="ic" width="${sz||22}" height="${sz||22}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="${sw||1.8}" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${IC[k]||IC.target}</svg>`;
 /* track colours: [main, soft background (light), soft background (dark)] */
-const TC={cfa1:{c:'var(--c-cfa)',g:'linear-gradient(135deg,#0B2545,#1F4FD8)',i:'scale'},mba:{c:'var(--c-mba)',g:'linear-gradient(135deg,#0B2545,#0B5BA8)',i:'landmark'},trade:{c:'var(--c-trade)',g:'linear-gradient(135deg,#FFB000,#F5C518)',fg:'#0B2545',i:'trend'},news:{c:'var(--c-news)',g:'linear-gradient(135deg,#F5C518,#FFE27A)',fg:'#0B2545',i:'globe'}};
+const TC={cfa1:{c:'var(--c-cfa)',g:'linear-gradient(135deg,#0B2545,#1F4FD8)',i:'scale'},cfa2:{c:'var(--c-cfa2)',g:'linear-gradient(135deg,#0B2545,#2E5FB8)',i:'trend'},cfa3:{c:'var(--c-cfa3)',g:'linear-gradient(135deg,#0B2545,#13406E)',i:'pie'},mba:{c:'var(--c-mba)',g:'linear-gradient(135deg,#0B2545,#0B5BA8)',i:'landmark'},trade:{c:'var(--c-trade)',g:'linear-gradient(135deg,#FFB000,#F5C518)',fg:'#0B2545',i:'trend'},news:{c:'var(--c-news)',g:'linear-gradient(135deg,#F5C518,#FFE27A)',fg:'#0B2545',i:'globe'}};
 /* one icon per mission */
 const MICON={m01:'doc',m02:'cycle',m03:'pie',m04:'scale',m05:'clock',m06:'percent',m07:'trend',m08:'curve',m09:'landmark',m10:'tag',m11:'target',m12:'shield',m13:'grid',m14:'flow',m15:'users',m16:'scatter',t01:'layers',t02:'clock',t03:'linechart',t04:'trend',t05:'curve',t06:'activity',t07:'barchart',t08:'shield',t09:'sigma',t10:'alert',t11:'flask',t12:'scale'};
 const tcol=t=>TC[t]||TC.cfa1;
