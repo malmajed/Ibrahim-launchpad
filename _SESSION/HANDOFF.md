@@ -40,7 +40,8 @@ Navy #0B2545, royal #1F4FD8, sky #5DA9E9, sunflower #F5C518, amber #FFB000, pale
 - Playwright screenshots: block service workers or reloads abort.
 
 ## Owner setup status
-Repo created and pushed. Pages, Sheet + Apps Script not yet set up — give the steps one at a time.
+- Repo renamed to lowercase `ibrahim-launchpad` (was created as `Ibrahim-launchpad`). Pages on (Source: GitHub Actions). Live: https://malmajed.github.io/ibrahim-launchpad/ (Pages paths are case-sensitive).
+- Google Sheet "Ibrahim Launchpad Progress" created. Next: Apps Script (Code.gs v5), SECRET in Script properties, Deploy → New deployment, enter URL + secret in Settings.
 
 ## Next action
-Owner setup (Pages, Sheet, Apps Script), then batch 2.
+Finish owner setup (Apps Script backend), then batch 2.
